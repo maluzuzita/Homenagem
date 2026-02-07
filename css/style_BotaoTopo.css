@@ -1,0 +1,29 @@
+/* BOTÃO PARA VOLTAR AO TOPO */
+#botaoTopo {
+    z-index: 1000;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--botao-topo);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 45px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#botaoTopo.mostrar {
+    display: flex;
+}
+
+#botaoTopo:hover {
+    background-color: var(--botao-topo-hover);
+    transform: translateY(-3px);
+}

@@ -1,0 +1,310 @@
+/* FUNDO COM GRADIENTE E RESET */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background: var(--cor-card-site);
+  color: var(--cor-texto);
+  transition: all 0.3s ease;
+}
+
+/* CARD QUE SUBSTITUI O FUNDO */
+.cartao-site {
+  background: var(--cor-de-fundo);
+  border-radius: 10px;
+  margin: 4em;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+header {
+  background-color: var(--cor-header-footer);
+  display: flex;
+  align-items: center;
+}
+
+#logo-senai {
+  width: 10%;
+  height: auto;
+  margin: 0.6em 1em 0.6em 1.5em;
+}
+
+.texto-nav {
+  margin-right: 1.1em;
+  text-decoration: none;
+  color: var(--cor-texto-header-footer);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#link-home:hover {
+  color: var(--hover-1);
+  transition: all 0.3s ease;
+}
+
+#link-homenagem:hover {
+  color: var(--hover-2);
+  transition: all 0.3s ease;
+}
+
+#link-professores:hover {
+  color: var(--hover-3);
+  transition: all 0.3s ease;
+}
+
+#link-especial:hover {
+  color: var(--hover-4);
+  transition: all 0.3s ease;
+}
+
+#link-finalizacao:hover {
+  color: var(--hover-5);
+  transition: all 0.3s ease;
+}
+
+.botao-iuverse {
+  width: 5%;
+  height: auto;
+  margin: 0.6em 1em 0.6em 1em;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: 0.1em;
+}
+
+/* HOME */
+.home-introducao {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-texto-home);
+}
+
+.home-introducao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/home_introducao-senai.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.home-introducao h1 {
+  font-size: 9rem;
+  margin-bottom: -25px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+.home-introducao p {
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+#imagem-primaria {
+  position: relative;
+  width: 70%;
+  height: auto;
+  border: 12px solid var(--cor-detalhe-primaria);
+  top: -17vh;
+  left: 2vw;
+  z-index: 1;
+}
+
+#imagem-secundaria {
+  position: relative;
+  width: 45%;
+  height: auto;
+  border: 10px solid var(--cor-detalhe-secundaria);
+  top: 45vh;
+  right: -6vw;
+  z-index: 2;
+}
+
+#imagem-terciaria {
+  position: relative;
+  width: 30%;
+  height: auto;
+  border: 9px solid var(--cor-detalhe-terciaria);
+  top: -1vh;
+  left: 27vw;
+  z-index: 2;
+}
+
+/* DIVISOR DE CONTEÚDOS */
+hr {
+  border: 3px dashed var(--cor-divisor-conteudos);
+  margin: 2.5em 3.5em 2.5em 3.5em;
+}
+
+/* SEÇÃO: HOMENAGEM GERAL */
+.padronizacao-secao-homenagem {
+  margin: 2.5em 3.5em 2.5em 3.5em;
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 2em;
+}
+
+.card-homenagem-geral {
+  background-color: var(--cor-card-conteudo);
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.card-homenagem-geral h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.imagens-homenagem-geral img {
+  border-radius: 50%;
+}
+
+/* SEÇÃO: HOMENAGEM PROFESSORES e ESPECIAL */
+.divisao-grid-template-professores {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.secao-professor img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.card-homenagem-professores {
+  background-color: var(--cor-card-conteudo);
+  padding: 2em;
+  border: 5px dashed var(--cor-divisor-conteudos);
+  height: 100%;
+}
+
+.card-homenagem-professores h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.dancing-script-small {
+  /* Estilo para a "assinatura" no final de cada homenagem */
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card-homenagem-especial {
+  background-color: var(--cor-especial);
+  padding: 2em;
+  border: 5px dashed var(--cor-divisor-conteudos);
+  height: 100%;
+}
+
+.card-homenagem-especial img {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+}
+
+.container-foto-nome-especial {
+  display: flexbox;
+  margin-bottom: 1.5em;
+  text-align: center;
+  justify-content: center;
+}
+
+.container-foto-nome-especial h2 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.container-foto-nome-especial h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.secao-professor {
+  display: flex;
+  margin-bottom: 2.5em;
+}
+
+.container-foto-nome {
+  display: inline-block;
+  margin-right: 1.5em;
+  text-align: center;
+}
+
+.container-texto-homenagem {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.borda-primaria {
+  border: 7px solid var(--cor-detalhe-primaria);
+}
+
+.borda-secundaria {
+  border: 7px solid var(--cor-detalhe-secundaria);
+}
+
+.borda-terciaria {
+  border: 7px solid var(--cor-detalhe-terciaria);
+}
+
+/* ASIDE: NOTA ADICIONAL */
+.padronizacao-secao-adicional {
+  margin: 7.5em 2.5em 3.5em;
+  display: flex;
+  align-items: flex-start;
+  grid-template-columns: 65% 25%;
+  gap: 2em;
+}
+
+.card-adicional {
+  background-color: var(--cor-card-conteudo);
+  padding: 2em;
+  border-radius: 15px;
+  gap: 2em;
+}
+
+.card-adicional h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.card-adicional p {
+  font-size: 1rem;
+}
+
+.padronizacao-secao-adicional img {
+  width: 50%;
+  height: auto;
+  border: 10px solid var(--cor-detalhe-vermelho);
+  align-self: center;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: var(--cor-header-footer);
+  color: var(--cor-texto-header-footer);
+  text-align: center;
+  font-weight: bold;
+  padding: 0.1em;
+}
+
